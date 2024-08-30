@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
@@ -6,6 +5,20 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.counter__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #4191ff;
+  font-weight: 700;
 }
 
 .counter-wrapper {
@@ -26,15 +39,16 @@ body {
   color: #fff;
   /* padding: 28px 163px; */
   border-radius: 20px;
-  transition: border .3s linear, color .3s linear, background-color .3s linear;
+  transition: border 0.3s linear, color 0.3s linear,
+    background-color 0.3s linear;
 }
 
 .btn--counter {
-  background-color: #4191FF;
+  background-color: #4191ff;
 }
 
 .btn--reset {
-  background-color: #D45366;
+  background-color: #d45366;
 }
 
 .btn:hover {
@@ -42,13 +56,13 @@ body {
 }
 
 .btn--counter:hover {
-  border: 2px solid #4191FF;
-  color: #4191FF;
+  border: 2px solid #4191ff;
+  color: #4191ff;
 }
 
 .btn--reset:hover {
-  border: 2px solid #D45366;
-  color: #D45366;
+  border: 2px solid #d45366;
+  color: #d45366;
 }
 
 .btn + .btn {
@@ -59,4 +73,19 @@ body {
   font-size: 32px;
   line-height: 43px;
   margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .counter {
+    font-size: 25px;
+  }
 }
