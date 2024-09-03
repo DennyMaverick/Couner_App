@@ -31,16 +31,21 @@ body {
 .btn {
   cursor: pointer;
   border: 2px solid transparent;
+  outline: none;
   font-family: inherit;
   font-weight: 700;
   font-size: 32px;
-  line-height: 100px;
+  line-height: 70px;
   width: 500px;
   color: #fff;
   /* padding: 28px 163px; */
   border-radius: 20px;
   transition: border 0.3s linear, color 0.3s linear,
     background-color 0.3s linear;
+}
+
+.btn:active {
+  outline: none;
 }
 
 .btn--counter {
@@ -87,5 +92,14 @@ body {
 
   .counter {
     font-size: 25px;
+  }
+
+  .counter__title {
+    font-size: 25px;
+  }
+
+  .btn {
+    font-size: 20px;
+    line-height: 70px;
   }
 }
